@@ -2,7 +2,7 @@
 
  - Time Series and Regression Analysis using Yen futures data
  
-## Starting off with our relevant libraries as always ##
+## Starting off with (most of) our relevant libraries as always ##
 
 ```python
 
@@ -36,11 +36,15 @@ yen_settle.plot(figsize = (12,6))
 ## Using the HP (Hodrick-Prescott) Flter lets get rid of the noise and focus on the trend ##
 
 ```python
-s = "Python syntax highlighting"
-print s
+import statsmodels.api as sm
+import matplotlib.pyplot as plt
+
+ts_noise, ts_trend = sm.tsa.filters.hpfilter(yen_futures['Settle'])
+ts_trend.plot(figsize=(20, 9))
+plt.show()
 ```
 
-![.]()
+![.](<a href="https://imgur.com/xs0fatN"><img src="https://i.imgur.com/xs0fatN.jpg" title="source: imgur.com" /></a>)
 
 ## Pulling out the Settle, Noise and Trend for our data ##
 
@@ -50,7 +54,7 @@ yen_nt = yen_nt.set_index('Date')
 yen_nt.tail()
 ```
 
-![.](<a href="https://imgur.com/xs0fatN"><img src="https://i.imgur.com/xs0fatN.jpg" title="source: imgur.com" /></a>)
+![.](<a href="https://imgur.com/QYcFBwd"><img src="https://i.imgur.com/QYcFBwd.jpg" title="source: imgur.com" /></a>)
  
  
  ## PLotting the settle vs. trend, we should fully expect to graphs. One the shows almost candlestick like behavior and one that is far easier to digest. ##
