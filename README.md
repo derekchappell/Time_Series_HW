@@ -70,7 +70,11 @@ settle_v_trend.plot(figsize=(20, 9))
  ## Forecasting the Settle Price using an ARIMA Model (Autoregressive Integrated Moving Average Model) ##
  - Below is the performance of the model, Pvalues are questionable using this model
 
-![.]()
+![.](<a href="https://imgur.com/QPrluoj"><img src="https://i.imgur.com/QPrluoj.jpg" title="source: imgur.com" /></a>)
+
+## Here is the trend our model predicts ##
+
+[.](<a href="https://imgur.com/SH6Px2n"><img src="https://i.imgur.com/SH6Px2n.jpg" title="source: imgur.com" /></a>)
  
 # Conclusions #
 
