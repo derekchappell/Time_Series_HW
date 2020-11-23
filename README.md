@@ -132,7 +132,7 @@ y_train = train['settle']
 X_test = test['Lagged_Return'].to_frame()
 y_test = test['settle']
 ```
-## On a visual level our first round is no instilling a terribly large amount of confidence in this model. ##
+## On a visual level our first round is not instilling a terribly large amount of confidence in this model. ##
 
 [.](<a href="https://imgur.com/OcMWLqn"><img src="https://i.imgur.com/OcMWLqn.jpg" title="source: imgur.com" /></a>)
 
